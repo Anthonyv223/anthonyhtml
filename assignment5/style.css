@@ -1,57 +1,73 @@
 /* General Styles */
 body {
-    font-family: sans-serif; /* Use a common, readable font */
-    margin: 0; /* Remove default body margin */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
-h1, h2 {
-    text-align: center; /* Center headings */
-}
-
-/* Navigation (Flexbox) */
-header {
-    background-color: #333; /* Dark background for header */
-    color: white;
+/* Navigation Bar */
+nav {
+    background-color: lightblue;
     padding: 10px 0;
 }
 
 nav ul {
-    list-style: none; /* Remove bullet points */
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
     padding: 0;
     margin: 0;
-    display: flex; /* Use Flexbox */
-    justify-content: space-around; /* Distribute links evenly */
 }
 
-nav a {
-    color: white;
-    text-decoration: none; /* Remove underlines */
-    padding: 10px 15px;
-    display: block; /* Make links block-level for easier clicking */
+nav ul li {
+    display: inline;
+    font-size: 18px;
 }
 
-nav a:hover {
-    background-color: #555; /* Darker background on hover */
-}
-
-/* Grid Layout */
+/* Main Layout */
 .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-    gap: 10px; /* Spacing between items */
-    margin: 20px; /* Add margin around the grid container */
-}
-
-.box {
-    background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 20px;
-    text-align: center;
-    border: 1px solid #ddd; /* Add a subtle border */
 }
 
-/* Section Styling */
-section{
-    margin: 20px;
-    padding: 15px;
-    border: 1px solid black;
+/* Main Content */
+.content {
+    background-color: yellow;
+    padding: 20px;
+    width: 70%;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: pink;
+    padding: 20px;
+    width: 25%;
+}
+
+/* Footer */
+footer {
+    background-color: lightgreen;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content, .sidebar {
+        width: 90%;
+        margin-bottom: 20px;
+    }
 }
