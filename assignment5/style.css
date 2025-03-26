@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
@@ -9,3 +10,78 @@
     padding: 20px;
     text-align: center;
 }
+=======
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: lightblue;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    font-size: 18px;
+}
+
+/* Main Layout */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Main Content */
+.content {
+    background-color: yellow;
+    padding: 20px;
+    width: 70%;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: pink;
+    padding: 20px;
+    width: 25%;
+}
+
+/* Footer */
+footer {
+    background-color: lightgreen;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content, .sidebar {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+>>>>>>> 9c0002d3793dcf39a5c3a86da2bc56dda64641ae
