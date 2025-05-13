@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact – NY Mets Fan Site</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JQTZ490G5V"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JQTZ490G5V');
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="players.html">Players</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="affiliate.html">Affiliate</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form>
+      <label>Name:<br><input type="text" name="name" required></label><br><br>
+      <label>Email:<br><input type="email" name="email" required></label><br><br>
+      <label>Message:<br><textarea name="message" rows="4" required></textarea></label><br><br>
+      <button type="submit" onclick="gtag('event','CTR',{event_category:'callToAction',event_label:'SubmitContact'});">Send</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 NY Mets Fan Hub</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
