@@ -9,11 +9,11 @@ document.addEventListener('DOMContentLoaded', () => {
       localStorage.setItem('theme', theme);
     }
   
-    document.body.insertAdjacentHTML('afterbegin', `<p>Welcome back, ${user}</p>`);
+    document.body.insertAdjacentHTML('afterbegin', `<p style='padding:10px;'>Welcome back, ${user}</p>`);
   
     if (theme === 'dark') {
       document.body.style.backgroundColor = '#121212';
-      document.body.style.color = '#f0f0f0';
+      document.body.style.color = '#ffffff';
     } else {
       document.body.style.backgroundColor = '#ffffff';
       document.body.style.color = '#000000';
@@ -33,3 +33,4 @@ document.addEventListener('DOMContentLoaded', () => {
       event_label: label
     });
   }
+  

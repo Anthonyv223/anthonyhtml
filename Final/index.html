@@ -7,18 +7,18 @@
   <link rel="stylesheet" href="styles.css" />
   <script src="script.js" defer></script>
 
-  <!-- GA4 Tag -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JQTZ490G5V"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
+    gtag('config', 'G-JQTZ490G5V');
   </script>
 </head>
 <body>
   <header>
-    <h1>Battle of the Brands</h1>
+    <h1>BMW vs Mercedes: Battle of the Brands</h1>
     <nav>
       <ul>
         <li><a href="index.html" onclick="trackNav('Home')">Home</a></li>
@@ -30,12 +30,18 @@
       </ul>
     </nav>
   </header>
+
   <main>
-    <section>
-      <p>Explore the legacy, design, and performance of BMW and Mercedes.</p>
-      <button onclick="trackCTA('Compare')">Compare Now</button>
+    <section class="hero">
+      <img src="images/hero.jpg" alt="BMW and Mercedes cars" class="hero-img">
+      <div class="hero-text">
+        <h2>Compare the best of German engineering</h2>
+        <p>Performance, luxury, and innovation — side by side</p>
+        <button onclick="trackCTA('Compare')" class="cta-button">Compare Now</button>
+      </div>
     </section>
   </main>
+
   <footer>
     <p>&copy; 2025 BMW vs Mercedes</p>
   </footer>
