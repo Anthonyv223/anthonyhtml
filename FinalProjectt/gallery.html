@@ -11,6 +11,26 @@
     gtag('js', new Date());
     gtag('config', 'G-JQTZ490G5V');
   </script>
+  <style>
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: auto;
+      border: 3px solid #003276;
+      border-radius: 10px;
+    }
+
+    .gallery-grid figcaption {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -28,13 +48,24 @@
   </header>
 
   <main>
-    <p>Here’s a collection of iconic moments in Mets history (replace with actual images):</p>
-    <ul>
-      <li>Tom Seaver pitching during the 1969 World Series</li>
-      <li>Pete Alonso smashing HRs at Citi Field</li>
-      <li>Wright & Reyes double plays</li>
-      <li>Keith and Darryl celebrations</li>
-    </ul>
+    <section class="gallery-grid">
+      <figure>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhy-QGO9lqnvg0ukuVChpDWnCqHi4GejvcLA&s" alt="Tom Seaver">
+        <figcaption>Tom Seaver – Mets Legend</figcaption>
+      </figure>
+      <figure>
+        <img src="https://static01.nyt.com/athletic/uploads/wp/2024/10/04011042/USATSI_24395024-scaled.jpg" alt="Pete Alonso">
+        <figcaption>Pete Alonso – Power Slugger</figcaption>
+      </figure>
+      <figure>
+        <img src="https://img.mlbstatic.com/mlb-images/image/private/t_2x1/t_w1536/mlb/rhob9injzkf4hyto82ml.jpg" alt="David Wright and José Reyes">
+        <figcaption>Wright & Reyes – Iconic Duo</figcaption>
+      </figure>
+      <figure>
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWciPY89nyQvifrJQ6RiwtjcUJnBnfNJcKctkgzZNwviQtdRjERGIh966SKCgxpqSRpXZWJBuA8iymvGuZprRcekuIU2f5citVnZU7Q2U801DlZhiu2SRc-Fd7xvi5WJpOA2lEyvPuDgHSrEcuKhZ3dR4vyvRkvOnDUWPDqwJKoYW4fC9Hlqhypc3QaA/s490/Capture.JPG" alt="Keith Hernandez and Darryl Strawberry">
+        <figcaption>Hernandez & Strawberry – Mets Royalty</figcaption>
+      </figure>
+    </section>
   </main>
 
   <footer>
