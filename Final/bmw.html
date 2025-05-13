@@ -1,3 +1,40 @@
-<title>BMW</title>
-<h1>Why Choose BMW?</h1>
-<p>BMW is known for its driving dynamics, sporty appeal, and precision engineering.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BMW</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JQTZ490G5V"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JQTZ490G5V');
+  </script>
+</head>
+<body>
+  <header>
+    <h1>BMW – The Ultimate Driving Machine</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" onclick="trackNav('Home')">Home</a></li>
+        <li><a href="about.html" onclick="trackNav('About')">About</a></li>
+        <li><a href="contact.html" onclick="trackNav('Contact')">Contact</a></li>
+        <li><a href="affiliate.html" onclick="trackNav('Affiliate')">Affiliate</a></li>
+        <li><a href="bmw.html" onclick="trackNav('BMW')">BMW</a></li>
+        <li><a href="mercedes.html" onclick="trackNav('Mercedes')">Mercedes</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <img src="images/bmw.jpg" alt="BMW car" style="width:100%; max-width:600px;">
+    <h2>Why People Love BMW</h2>
+    <p>Known for sporty handling, innovation, and a connection to motorsports — BMW offers drivers a dynamic and exhilarating experience.</p>
+  </main>
+  <footer>
+    <p>&copy; 2025 BMW vs Mercedes</p>
+  </footer>
+</body>
+</html>
