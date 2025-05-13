@@ -2,10 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About</title>
-  <link rel="stylesheet" href="./styles.css" />
-  <script src="./script.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About – NY Mets Fan Site</title>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JQTZ490G5V"></script>
@@ -15,38 +13,53 @@
     gtag('js', new Date());
     gtag('config', 'G-JQTZ490G5V');
   </script>
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>About This Project</h1>
-    <nav>
-      <ul>
-        <li><a href="./index.html" onclick="trackNav('Home')">Home</a></li>
-        <li><a href="./about.html" onclick="trackNav('About')">About</a></li>
-        <li><a href="./contact.html" onclick="trackNav('Contact')">Contact</a></li>
-        <li><a href="./affiliate.html" onclick="trackNav('Affiliate')">Affiliate</a></li>
-        <li><a href="./bmw.html" onclick="trackNav('BMW')">BMW</a></li>
-        <li><a href="./mercedes.html" onclick="trackNav('Mercedes')">Mercedes</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <h1>About the Mets</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="players.html">Players</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="affiliate.html">Affiliate</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h2>Purpose &amp; Vision</h2>
-      <p>This site helps you compare two iconic German brands—BMW and Mercedes-Benz—across performance, luxury, and cutting-edge tech.</p>
-      <p>Designed as a mini-web app project, it demonstrates:</p>
+  <main class="container">
+    <section id="history">
+      <h2>Team History</h2>
+      <p>
+        The Mets joined Major League Baseball in 1962 to fill the National League void in New York.
+        Their first World Series appearance came in 1969 (the “Miracle Mets”), with another crown
+        following in 1986. Through ups and downs, the orange-and-blue nation stands proud.
+      </p>
+    </section>
+
+    <section id="values">
+      <h2>Why We Love Them</h2>
       <ul>
-        <li>Semantic, responsive HTML/CSS</li>
-        <li>JavaScript personalization (name &amp; theme)</li>
-        <li>GA4 analytics &amp; event tracking</li>
-        <li>Referral traffic via affiliate page</li>
+        <li>Passionate blue & orange tradition</li>
+        <li>Beloved icons like Tom Seaver & Keith Hernandez</li>
+        <li>Modern stars carrying the torch—Degrom, Lindor, Alonso</li>
+        <li>Never-say-die spirit at Citi Field</li>
       </ul>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 BMW vs Mercedes</p>
+    <div class="container">
+      <p>⚾️ NY Mets Fan Hub &bull; © 2025</p>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

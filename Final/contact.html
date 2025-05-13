@@ -2,10 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact</title>
-  <link rel="stylesheet" href="./styles.css" />
-  <script src="./script.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact – NY Mets Fan Site</title>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JQTZ490G5V"></script>
@@ -15,32 +13,52 @@
     gtag('js', new Date());
     gtag('config', 'G-JQTZ490G5V');
   </script>
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>Contact Us</h1>
-    <nav>
-      <ul>
-        <li><a href="./index.html" onclick="trackNav('Home')">Home</a></li>
-        <li><a href="./about.html" onclick="trackNav('About')">About</a></li>
-        <li><a href="./contact.html" onclick="trackNav('Contact')">Contact</a></li>
-        <li><a href="./affiliate.html" onclick="trackNav('Affiliate')">Affiliate</a></li>
-        <li><a href="./bmw.html" onclick="trackNav('BMW')">BMW</a></li>
-        <li><a href="./mercedes.html" onclick="trackNav('Mercedes')">Mercedes</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <h1>Contact Us</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="players.html">Players</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="affiliate.html">Affiliate</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h2>Get in Touch</h2>
-      <p>Email: <a href="mailto:info@bmwvmercedes.com">info@bmwvmercedes.com</a></p>
-      <p>Twitter: <a href="https://twitter.com/AutoBattle" target="_blank">@AutoBattle</a></p>
-    </section>
+  <main class="container">
+    <form action="#" method="post">
+      <label>
+        Name<br />
+        <input type="text" name="name" required />
+      </label>
+      <label>
+        Email<br />
+        <input type="email" name="email" required />
+      </label>
+      <label>
+        Message<br />
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+      <button type="submit" onclick="gtag('event','CTR',{event_category:'callToAction',event_label:'SubmitContact'});">
+        Send
+      </button>
+    </form>
   </main>
 
   <footer>
-    <p>&copy; 2025 BMW vs Mercedes</p>
+    <div class="container">
+      <p>⚾️ NY Mets Fan Hub &bull; © 2025</p>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

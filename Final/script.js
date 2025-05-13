@@ -1,36 +1,16 @@
-document.addEventListener('DOMContentLoaded', () => {
-  let user = localStorage.getItem('username');
+window.addEventListener('DOMContentLoaded', () => {
+  let name = localStorage.getItem('name');
   let theme = localStorage.getItem('theme');
 
-  if (!user || !theme) {
-    user = prompt("What's your name?");
-    theme = prompt("Dark or light mode?").toLowerCase();
-    localStorage.setItem('username', user);
+  if (!name || !theme) {
+    name = prompt('Welcome! What is your name?') || 'Fan';
+    theme = confirm('Do you prefer dark mode? OK = Dark, Cancel = Light')
+      ? 'dark'
+      : 'light';
+    localStorage.setItem('name', name);
     localStorage.setItem('theme', theme);
   }
 
-  // greeting bar
-  const bar = document.createElement('div');
-  bar.className = 'greeting';
-  bar.textContent = `Welcome back, ${user}`;
-  document.body.prepend(bar);
-
-  // theme toggle
-  if (theme === 'light') {
-    document.body.classList.add('light-mode');
-  }
+  document.getElementById('greeting').textContent = `Welcome back, ${name}!`;
+  document.body.classList.add(theme);
 });
-
-function trackNav(label) {
-  gtag('event', 'nav_click', {
-    event_category: 'navigation',
-    event_label: label
-  });
-}
-
-function trackCTA(label) {
-  gtag('event', 'CTR', {
-    event_category: 'callToAction',
-    event_label: label
-  });
-}

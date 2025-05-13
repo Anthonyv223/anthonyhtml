@@ -2,10 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Affiliate Links</title>
-  <link rel="stylesheet" href="./styles.css" />
-  <script src="./script.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Affiliate – NY Mets Fan Site</title>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JQTZ490G5V"></script>
@@ -15,35 +13,52 @@
     gtag('js', new Date());
     gtag('config', 'G-JQTZ490G5V');
   </script>
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>Affiliate Support</h1>
-    <nav>
-      <ul>
-        <li><a href="./index.html" onclick="trackNav('Home')">Home</a></li>
-        <li><a href="./about.html" onclick="trackNav('About')">About</a></li>
-        <li><a href="./contact.html" onclick="trackNav('Contact')">Contact</a></li>
-        <li><a href="./affiliate.html" onclick="trackNav('Affiliate')">Affiliate</a></li>
-        <li><a href="./bmw.html" onclick="trackNav('BMW')">BMW</a></li>
-        <li><a href="./mercedes.html" onclick="trackNav('Mercedes')">Mercedes</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <h1>Affiliate Links</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="players.html">Players</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="affiliate.html">Affiliate</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h2>Our Classmates’ Sites</h2>
-      <ul>
-        <li><a href="https://caranddriver.com" target="_blank">Car &amp; Driver</a></li>
-        <li><a href="https://motortrend.com" target="_blank">MotorTrend</a></li>
-        <li><a href="https://topgear.com" target="_blank">Top Gear</a></li>
-      </ul>
-    </section>
+  <main class="container">
+    <ul class="affiliate-list">
+      <li>
+        <a href="https://www.mlb.com/mets" target="_blank" onclick="gtag('event','CTR',{event_category:'callToAction',event_label:'OfficialMetsSite'});">
+          Official MLB Mets Website
+        </a>
+      </li>
+      <li>
+        <a href="https://www.sny.tv/mets" target="_blank" onclick="gtag('event','CTR',{event_category:'callToAction',event_label:'SNYMets'});">
+          SNY Mets Coverage
+        </a>
+      </li>
+      <li>
+        <a href="https://www.metsmerizedonline.com" target="_blank" onclick="gtag('event','CTR',{event_category:'callToAction',event_label:'MetsMerized'});">
+          Mets Merized Online
+        </a>
+      </li>
+    </ul>
   </main>
 
   <footer>
-    <p>&copy; 2025 BMW vs Mercedes</p>
+    <div class="container">
+      <p>⚾️ NY Mets Fan Hub &bull; © 2025</p>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
