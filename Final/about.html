@@ -4,8 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="./script.js" defer></script>
+
+  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JQTZ490G5V"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -19,20 +21,30 @@
     <h1>About This Project</h1>
     <nav>
       <ul>
-        <li><a href="index.html" onclick="trackNav('Home')">Home</a></li>
-        <li><a href="about.html" onclick="trackNav('About')">About</a></li>
-        <li><a href="contact.html" onclick="trackNav('Contact')">Contact</a></li>
-        <li><a href="affiliate.html" onclick="trackNav('Affiliate')">Affiliate</a></li>
-        <li><a href="bmw.html" onclick="trackNav('BMW')">BMW</a></li>
-        <li><a href="mercedes.html" onclick="trackNav('Mercedes')">Mercedes</a></li>
+        <li><a href="./index.html" onclick="trackNav('Home')">Home</a></li>
+        <li><a href="./about.html" onclick="trackNav('About')">About</a></li>
+        <li><a href="./contact.html" onclick="trackNav('Contact')">Contact</a></li>
+        <li><a href="./affiliate.html" onclick="trackNav('Affiliate')">Affiliate</a></li>
+        <li><a href="./bmw.html" onclick="trackNav('BMW')">BMW</a></li>
+        <li><a href="./mercedes.html" onclick="trackNav('Mercedes')">Mercedes</a></li>
       </ul>
     </nav>
   </header>
+
   <main>
-    <h2>Purpose of the Website</h2>
-    <p>This site was created to help users compare two of the most iconic German automobile brands: BMW and Mercedes-Benz.</p>
-    <p>We evaluate performance, luxury, innovation, and user experience — helping enthusiasts and buyers make informed choices.</p>
+    <section>
+      <h2>Purpose &amp; Vision</h2>
+      <p>This site helps you compare two iconic German brands—BMW and Mercedes-Benz—across performance, luxury, and cutting-edge tech.</p>
+      <p>Designed as a mini-web app project, it demonstrates:</p>
+      <ul>
+        <li>Semantic, responsive HTML/CSS</li>
+        <li>JavaScript personalization (name &amp; theme)</li>
+        <li>GA4 analytics &amp; event tracking</li>
+        <li>Referral traffic via affiliate page</li>
+      </ul>
+    </section>
   </main>
+
   <footer>
     <p>&copy; 2025 BMW vs Mercedes</p>
   </footer>

@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BMW vs Mercedes</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="./script.js" defer></script>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JQTZ490G5V"></script>
@@ -18,26 +18,28 @@
 </head>
 <body>
   <header>
-    <h1>BMW vs Mercedes: Battle of the Brands</h1>
+    <h1>BMW vs Mercedes</h1>
     <nav>
       <ul>
-        <li><a href="index.html" onclick="trackNav('Home')">Home</a></li>
-        <li><a href="about.html" onclick="trackNav('About')">About</a></li>
-        <li><a href="contact.html" onclick="trackNav('Contact')">Contact</a></li>
-        <li><a href="affiliate.html" onclick="trackNav('Affiliate')">Affiliate</a></li>
-        <li><a href="bmw.html" onclick="trackNav('BMW')">BMW</a></li>
-        <li><a href="mercedes.html" onclick="trackNav('Mercedes')">Mercedes</a></li>
+        <li><a href="./index.html" onclick="trackNav('Home')">Home</a></li>
+        <li><a href="./about.html" onclick="trackNav('About')">About</a></li>
+        <li><a href="./contact.html" onclick="trackNav('Contact')">Contact</a></li>
+        <li><a href="./affiliate.html" onclick="trackNav('Affiliate')">Affiliate</a></li>
+        <li><a href="./bmw.html" onclick="trackNav('BMW')">BMW</a></li>
+        <li><a href="./mercedes.html" onclick="trackNav('Mercedes')">Mercedes</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section class="hero">
-      <img src="images/hero.jpg" alt="BMW and Mercedes cars" class="hero-img">
+      <img src="./images/hero.jpg" alt="BMW vs Mercedes cars" class="hero-img" />
       <div class="hero-text">
-        <h2>Compare the best of German engineering</h2>
-        <p>Performance, luxury, and innovation — side by side</p>
-        <button onclick="trackCTA('Compare')" class="cta-button">Compare Now</button>
+        <h2>Performance, Luxury &amp; Innovation</h2>
+        <p>Compare BMW and Mercedes side by side</p>
+        <button class="cta-button" onclick="trackCTA('Compare') || (window.location='./bmw.html')">
+          Compare Now
+        </button>
       </div>
     </section>
   </main>

@@ -3,36 +3,51 @@
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #121212;
-  color: white;
+  background: #121212;
+  color: #f0f0f0;
+}
+body.light-mode {
+  background: #fff;
+  color: #111;
+}
+
+.greeting {
+  background: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
 }
 
 header, footer {
-  background-color: #000;
+  background: #000;
+  padding: 20px;
   text-align: center;
-  padding: 1em 0;
 }
-
 nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
-  list-style: none;
   gap: 20px;
-  padding: 0;
 }
-nav ul li a {
+nav a {
   color: #ccc;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
 }
-nav ul li a:hover {
+nav a:hover {
   color: #1e90ff;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
 }
 
 .hero {
   position: relative;
-  text-align: center;
+  margin-top: 20px;
 }
 .hero-img {
   width: 100%;
@@ -45,29 +60,46 @@ nav ul li a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: white;
+}
+.hero-text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.hero-text p {
+  font-size: 1.2rem;
 }
 .cta-button {
-  margin-top: 15px;
+  margin-top: 20px;
   padding: 12px 24px;
-  font-size: 16px;
-  background-color: #1e90ff;
+  background: #1e90ff;
   border: none;
   color: white;
   border-radius: 6px;
+  font-size: 1rem;
   cursor: pointer;
 }
 .cta-button:hover {
-  background-color: #63b3ed;
+  background: #63b3ed;
 }
 
-main {
-  padding: 20px;
-  text-align: center;
+.content-img {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+footer {
+  margin-top: 40px;
 }
 
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
     gap: 10px;
+  }
+  .hero-img {
+    height: 250px;
   }
 }
